@@ -68,11 +68,16 @@ img{
     border-radius: 200px;;
 }
 .intro{
-    width:400px;
-    height:400px;
+    width:200px;
+    height:200px;
+}
+.section{
+display: block;
+min-height: 100vh;
+}
+.home{
+    display:flex;
 }
 .container{
-    display:flex;
-    align-items: center;
-
+    margin : auto;
 }
