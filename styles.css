@@ -192,7 +192,7 @@ text-align:center
     margin:auto
 }
 .animation .animation-ul{
-    background-color: red;
+  
     height: 400px;
     width: 400px;
   /*   border-radius: 200px; */
@@ -205,38 +205,47 @@ text-align:center
 }
 @keyframes animate
 {
-    50% {
-        transform: translateX();
-      }
-      100% {
-        transform: rotate(0deg);
-      }
+   from{ transform: rotate(0deg) translateX(150px) rotate(0deg);}
+   to{ transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+@keyframes a
+{
+    from{ transform: rotate(0deg) translateX(130px) rotate(0deg);}
+    to{ transform: rotate(360deg) translateX(130px) rotate(-360deg); }
+}
+@keyframes b
+{
+    from{ transform: rotate(0deg) translateX(100px) rotate(0deg);}
+    to{ transform: rotate(360deg) translateX(100px) rotate(-360deg); }
 }
 .animation .animation-ul .html{
+   
     position:absolute;
-    top:60px;
-    left:80px;
+    top:200px;
+    left:200px;
     /* transform-style: preserve-3d; */
-    transform-origin: 25px;
-    animation: animate 22s linear infinite;
-    /* transform: translateX(50px) translateY(50px); */
-    /* transition: transform 1s ease-in; */
+   
+    animation: animate 30s linear infinite;
+    /* transform: translate(200px);
+    transition: transform 4s ease-in;  */
 }
 .animation .animation-ul .css{
+   
     position:absolute;
-    top:20px;
-    left:160px;
-    animation: animate 1s linear ;
-    transition: transform 1s ease-in;
+    top:200px;
+    left:200px;
+    animation: a 20s linear infinite ;
+    /* transition: transform 1s ease-in; */
 }
 .animation .animation-ul .javascript{
+  
     position:absolute;
-    top:140px;
-    left:20px;
-    animation: animate 1s linear ;
-    transition: transform 1s ease-in;
+    top:200px;
+    left:200px;
+    animation: b 10s linear infinite ;
+    /* transition: transform 1s ease-in; */
 }
-.animation .animation-ul .react{
+/* .animation .animation-ul .react{
     position:absolute;
     top:260px;
     left:100px;
@@ -270,7 +279,7 @@ text-align:center
     left:200px;
     animation: animate 1s linear ;
     transition: transform 1s ease-in;
-}
+} */
 
 .animation li{
     color:#fff;
